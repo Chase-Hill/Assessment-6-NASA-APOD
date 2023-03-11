@@ -19,10 +19,11 @@
 		AF9823D329BD381C00F75DEE /* APOD Daily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9823D129BD381C00F75DEE /* APOD Daily.storyboard */; };
 		AF9823D529BD382E00F75DEE /* APOD Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9823D429BD382E00F75DEE /* APOD Search.storyboard */; };
 		AF9823D729BD398B00F75DEE /* Network Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823D629BD398B00F75DEE /* Network Errors.swift */; };
-		AF9823DB29BD39AE00F75DEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823DA29BD39AE00F75DEE /* Constants.swift */; };
+		AF9823DB29BD39AE00F75DEE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823DA29BD39AE00F75DEE /* EndPoint.swift */; };
 		AF9823DE29BD3D3900F75DEE /* APODDailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823DD29BD3D3900F75DEE /* APODDailyViewModel.swift */; };
 		AF9823E029BD3E0D00F75DEE /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823DF29BD3E0D00F75DEE /* NetworkingController.swift */; };
 		AF9823E229BD3E5100F75DEE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E129BD3E5100F75DEE /* APIService.swift */; };
+		AF9823E529BD432B00F75DEE /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E429BD432B00F75DEE /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +41,11 @@
 		AF9823D229BD381C00F75DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Assessment-6-NASA-APOD/Storyboard/Base.lproj/APOD Daily.storyboard"; sourceTree = "<group>"; };
 		AF9823D429BD382E00F75DEE /* APOD Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "APOD Search.storyboard"; sourceTree = "<group>"; };
 		AF9823D629BD398B00F75DEE /* Network Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Errors.swift"; sourceTree = "<group>"; };
-		AF9823DA29BD39AE00F75DEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF9823DA29BD39AE00F75DEE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		AF9823DD29BD3D3900F75DEE /* APODDailyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDailyViewModel.swift; sourceTree = "<group>"; };
 		AF9823DF29BD3E0D00F75DEE /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		AF9823E129BD3E5100F75DEE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		AF9823E429BD432B00F75DEE /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				AF9823D929BD399E00F75DEE /* Networking */,
-				AF9823DC29BD39B400F75DEE /* Constants  */,
-				AF9823E329BD3E8E00F75DEE /* Abstraction */,
+				AF9823E329BD3E8E00F75DEE /* Abstraction & Extensions */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -161,20 +162,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		AF9823DC29BD39B400F75DEE /* Constants  */ = {
+		AF9823E329BD3E8E00F75DEE /* Abstraction & Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AF9823DA29BD39AE00F75DEE /* Constants.swift */,
-			);
-			path = "Constants ";
-			sourceTree = "<group>";
-		};
-		AF9823E329BD3E8E00F75DEE /* Abstraction */ = {
-			isa = PBXGroup;
-			children = (
+				AF9823DA29BD39AE00F75DEE /* EndPoint.swift */,
 				AF9823E129BD3E5100F75DEE /* APIService.swift */,
+				AF9823E429BD432B00F75DEE /* DateExtension.swift */,
 			);
-			path = Abstraction;
+			path = "Abstraction & Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9823C429BD2A4900F75DEE /* APODSearchTableViewController.swift in Sources */,
+				AF9823E529BD432B00F75DEE /* DateExtension.swift in Sources */,
 				AF9823CB29BD31A800F75DEE /* APOD.swift in Sources */,
 				AF9823AE29BD265100F75DEE /* AppDelegate.swift in Sources */,
 				AF9823E229BD3E5100F75DEE /* APIService.swift in Sources */,
@@ -259,7 +255,7 @@
 				AF9823C729BD2BA200F75DEE /* APODDailyViewController.swift in Sources */,
 				AF9823C929BD2BB600F75DEE /* APODSearchTableViewCell.swift in Sources */,
 				AF9823B029BD265100F75DEE /* SceneDelegate.swift in Sources */,
-				AF9823DB29BD39AE00F75DEE /* Constants.swift in Sources */,
+				AF9823DB29BD39AE00F75DEE /* EndPoint.swift in Sources */,
 				AF9823E029BD3E0D00F75DEE /* NetworkingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

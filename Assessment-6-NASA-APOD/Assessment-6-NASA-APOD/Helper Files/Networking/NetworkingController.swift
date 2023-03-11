@@ -13,5 +13,8 @@ struct NetworkingController {
     let service = APIService()
     
     // MARK: - Functions
-    
+    func fetchAPOD(completion: @escaping (Result <APOD, NetworkError>) -> Void) {
+        
+        
+    }
 }
