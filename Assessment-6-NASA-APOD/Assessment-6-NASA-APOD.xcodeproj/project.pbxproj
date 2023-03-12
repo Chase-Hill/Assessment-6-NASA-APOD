@@ -23,6 +23,7 @@
 		AF9823E729BD5EAA00F75DEE /* APODSearchedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */; };
 		AF9823EC29BD632E00F75DEE /* APODSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */; };
 		AF9823F029BD8BF700F75DEE /* ServiceRequestingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823EF29BD8BF700F75DEE /* ServiceRequestingImageView.swift */; };
+		AF9823F229BE4EC200F75DEE /* DailyExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823F129BE4EC200F75DEE /* DailyExplanationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchedViewModel.swift; sourceTree = "<group>"; };
 		AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchViewController.swift; sourceTree = "<group>"; };
 		AF9823EF29BD8BF700F75DEE /* ServiceRequestingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestingImageView.swift; sourceTree = "<group>"; };
+		AF9823F129BE4EC200F75DEE /* DailyExplanationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExplanationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				AF9823DD29BD3D3900F75DEE /* APODDailyViewModel.swift */,
 				AF9823C629BD2BA200F75DEE /* APODDailyViewController.swift */,
+				AF9823F129BE4EC200F75DEE /* DailyExplanationViewController.swift */,
 			);
 			path = "APOD Daily";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				AF9823AE29BD265100F75DEE /* AppDelegate.swift in Sources */,
 				AF9823E229BD3E5100F75DEE /* APIService.swift in Sources */,
 				AF9823D729BD398B00F75DEE /* Network Errors.swift in Sources */,
+				AF9823F229BE4EC200F75DEE /* DailyExplanationViewController.swift in Sources */,
 				AF9823DE29BD3D3900F75DEE /* APODDailyViewModel.swift in Sources */,
 				AF9823C729BD2BA200F75DEE /* APODDailyViewController.swift in Sources */,
 				AF9823E729BD5EAA00F75DEE /* APODSearchedViewModel.swift in Sources */,

@@ -5,9 +5,9 @@
 //  Created by Chase on 3/11/23.
 //
 
-import Foundation
+import UIKit
 
-protocol APODDailyViewModelDelegate: APODDailyViewController {
+protocol APODDailyViewModelDelegate: AnyObject {
     func updateViews()
 }
 
@@ -36,15 +36,4 @@ class APODDailyViewModel {
             }
         }
     }
-//    
-//    func fetchImage() {
-//        guard let apod = apod else { return }
-//        service.fetchAPODImage(forAPOD: apod.imageURL) { result in
-//            switch result {
-//            case .success(let apod):
-//            case .failure(let error):
-//                print(error.errorDescription ?? NetworkError.unknownError)
-//            }
-//        }
-//    }
 }

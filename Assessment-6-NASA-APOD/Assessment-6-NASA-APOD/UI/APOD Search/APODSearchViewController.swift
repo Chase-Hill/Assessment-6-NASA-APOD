@@ -23,7 +23,7 @@ class APODSearchViewController: UIViewController {
     }
     
     // MARK: - Functions
-    func assignbackground(){
+    func assignbackground() {
         let background = UIImage(named: "APOD search background")
         
         var backGroundImageView : UIImageView!
@@ -32,7 +32,7 @@ class APODSearchViewController: UIViewController {
         backGroundImageView.clipsToBounds = true
         backGroundImageView.image = background
         backGroundImageView.center = view.center
-        backGroundImageView.alpha = 0.75
+        backGroundImageView.alpha = 1
         view.addSubview(backGroundImageView)
         self.view.sendSubviewToBack(backGroundImageView)
     }
