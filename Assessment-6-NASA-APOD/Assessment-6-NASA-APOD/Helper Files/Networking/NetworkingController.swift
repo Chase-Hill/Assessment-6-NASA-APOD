@@ -7,10 +7,16 @@
 
 import UIKit
 
-struct NetworkingController {
+protocol NetworkingControllerServiceable {
+    func fetchAPOD(with endpoint: APODEndPoint, completion: @escaping (Result <APOD, NetworkError>) -> Void)
+    func fetchSearchedAPOD(with endpoint: APODEndPoint, fromDate date: String, completion: @escaping (Result <APOD, NetworkError>) -> Void)
+    func fetchAPODImage(forAPOD image: String, completion: @escaping (Result <UIImage, NetworkError>) -> Void)
+}
+
+class NetworkingController {
 
     // MARK: - Properties
-    let service = APIService()
+    let provider = APIService()
 
     // MARK: - Functions
     func fetchAPOD(with endpoint: APODEndPoint, completion: @escaping (Result <APOD, NetworkError>) -> Void) {
@@ -18,7 +24,7 @@ struct NetworkingController {
         guard let finalURL = endpoint.fullURL else { completion(.failure(.invalidURL)) ; return }
 
         let request = URLRequest(url: finalURL)
-        service.perform(request) { result in
+        provider.perform(request) { result in
             switch result {
             case .success(let data):
                 do {
@@ -39,7 +45,7 @@ struct NetworkingController {
         guard let finalURL = endpoint.fullURL else { completion(.failure(.invalidURL)) ; return }
 
         let request = URLRequest(url: finalURL)
-        service.perform(request) { result in
+        provider.perform(request) { result in
             switch result {
             case .success(let data):
                 do {
@@ -55,9 +61,9 @@ struct NetworkingController {
         }
     }
     
-    func fetchAPODImage(forAPOD image: String, completion: @escaping (Result <UIImage, NetworkError>) -> Void) {
+    func fetchAPODImage(forAPOD apod: APOD, completion: @escaping (Result <UIImage, NetworkError>) -> Void) {
         
-        guard let imageURL = URL(string: image) else { completion(.failure(.invalidURL)) ; return }
+        guard let imageURL = URL(string: apod.imageURL) else { completion(.failure(.invalidURL)) ; return }
         
         URLSession.shared.dataTask(with: imageURL) { data, response, error in
             

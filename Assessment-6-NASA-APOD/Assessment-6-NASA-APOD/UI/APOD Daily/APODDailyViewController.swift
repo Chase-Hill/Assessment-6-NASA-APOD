@@ -15,10 +15,14 @@ class APODDailyViewController: UIViewController {
     @IBOutlet weak var todayAPODImageView: UIImageView!
     @IBOutlet weak var apodExplanationLabel: UILabel!
     
+    // MARK: - Properties
+    var viewModel: APODDailyViewModel!
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
+        viewModel = APODDailyViewModel(delegate: self)
     }
     
     // MARK: - Functions
@@ -34,5 +38,18 @@ class APODDailyViewController: UIViewController {
         backGroundImageView.alpha = 0.75
         view.addSubview(backGroundImageView)
         self.view.sendSubviewToBack(backGroundImageView)
+    }
+}
+
+// MARK: - Extensions
+extension APODDailyViewController: APODDailyViewModelDelegate {
+    func updateViews() {
+        DispatchQueue.main.async {
+            
+            guard let dailyAPOD = self.viewModel.apod else { return }
+            self.apodTitleLabel.text = dailyAPOD.title
+            self.apodCopyrightLabel.text = "Credit: \(dailyAPOD.copyright ?? "Credit: NASA")"
+            self.apodExplanationLabel.text = dailyAPOD.explanation
+        }
     }
 }

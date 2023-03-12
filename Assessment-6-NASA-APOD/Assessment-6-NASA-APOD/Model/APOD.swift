@@ -13,13 +13,13 @@ struct APOD: Decodable {
         case date
         case explanation
         case title
-        case APODUrl = "url"
+        case imageURL = "url"
         case copyright
     }
     
     let date: String
     let explanation: String
     let title: String
-    let APODUrl: String
+    let imageURL: String
     let copyright: String?
 }
