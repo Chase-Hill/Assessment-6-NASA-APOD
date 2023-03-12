@@ -18,7 +18,7 @@ class APODDailyViewModel {
     let service: NetworkingControllerServiceable
     private weak var delegate: APODDailyViewModelDelegate?
     
-    init(delegate: APODDailyViewModelDelegate, serviceInjected: NetworkingControllerServiceable = NetworkingController() as! NetworkingControllerServiceable) {
+    init(delegate: APODDailyViewModelDelegate, serviceInjected: NetworkingControllerServiceable = NetworkingController()) {
         self.delegate = delegate
         self.service = serviceInjected
         fetchDaily()

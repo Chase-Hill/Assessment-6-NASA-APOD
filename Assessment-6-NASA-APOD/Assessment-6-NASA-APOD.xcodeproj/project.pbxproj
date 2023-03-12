@@ -22,6 +22,7 @@
 		AF9823E529BD432B00F75DEE /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E429BD432B00F75DEE /* DateExtension.swift */; };
 		AF9823E729BD5EAA00F75DEE /* APODSearchedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */; };
 		AF9823EC29BD632E00F75DEE /* APODSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */; };
+		AF9823F029BD8BF700F75DEE /* ServiceRequestingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823EF29BD8BF700F75DEE /* ServiceRequestingImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AF9823E429BD432B00F75DEE /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchedViewModel.swift; sourceTree = "<group>"; };
 		AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchViewController.swift; sourceTree = "<group>"; };
+		AF9823EF29BD8BF700F75DEE /* ServiceRequestingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestingImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		AF9823C529BD2A4E00F75DEE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AF9823EF29BD8BF700F75DEE /* ServiceRequestingImageView.swift */,
 				AF9823CF29BD37EC00F75DEE /* APOD Daily */,
 				AF9823D029BD37FB00F75DEE /* APOD Search */,
 			);
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9823F029BD8BF700F75DEE /* ServiceRequestingImageView.swift in Sources */,
 				AF9823E529BD432B00F75DEE /* DateExtension.swift in Sources */,
 				AF9823CB29BD31A800F75DEE /* APOD.swift in Sources */,
 				AF9823AE29BD265100F75DEE /* AppDelegate.swift in Sources */,

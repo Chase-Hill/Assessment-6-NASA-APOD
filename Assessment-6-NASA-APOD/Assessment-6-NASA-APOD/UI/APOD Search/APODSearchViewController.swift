@@ -13,7 +13,7 @@ class APODSearchViewController: UIViewController {
     @IBOutlet weak var apodDatePicker: UIDatePicker!
     @IBOutlet weak var apodTitleLabel: UILabel!
     @IBOutlet weak var apodCopyrightLabel: UILabel!
-    @IBOutlet weak var searchedAPODImageView: UIImageView!
+    @IBOutlet weak var searchedAPODImageView: ServiceRequestingImageView!
     @IBOutlet weak var apodExplanationLabel: UILabel!
     
     // MARK: - LifeCycle

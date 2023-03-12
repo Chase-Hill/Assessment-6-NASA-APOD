@@ -10,10 +10,10 @@ import UIKit
 protocol NetworkingControllerServiceable {
     func fetchAPOD(with endpoint: APODEndPoint, completion: @escaping (Result <APOD, NetworkError>) -> Void)
     func fetchSearchedAPOD(with endpoint: APODEndPoint, fromDate date: String, completion: @escaping (Result <APOD, NetworkError>) -> Void)
-    func fetchAPODImage(forAPOD image: String, completion: @escaping (Result <UIImage, NetworkError>) -> Void)
+    func fetchAPODImage(forAPOD apod: APOD, completion: @escaping (Result <UIImage, NetworkError>) -> Void)
 }
 
-class NetworkingController {
+class NetworkingController: NetworkingControllerServiceable {
 
     // MARK: - Properties
     let provider = APIService()
