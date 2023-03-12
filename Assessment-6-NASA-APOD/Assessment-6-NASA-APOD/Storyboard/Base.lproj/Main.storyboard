@@ -3,6 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,37 +14,165 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="A3y-Fl-V0p" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sTS-Ez-np3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ro6-6M-GGG" kind="relationship" relationship="viewControllers" id="eES-IE-uMR"/>
-                        <segue destination="x53-9d-NxP" kind="relationship" relationship="viewControllers" id="0Ys-Qz-5cW"/>
+                        <segue destination="pVg-Fj-BDk" kind="relationship" relationship="viewControllers" id="MbJ-R3-rZF"/>
+                        <segue destination="haZ-pn-9mP" kind="relationship" relationship="viewControllers" id="79x-fC-HM6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziv-Nb-jmM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-765"/>
+            <point key="canvasLocation" x="2329" y="-766"/>
         </scene>
-        <!--APOD Daily-->
-        <scene sceneID="LZ0-xG-qDI">
+        <!--Todays APOD-->
+        <scene sceneID="ji9-Me-zPv">
             <objects>
-                <viewControllerPlaceholder storyboardName="APOD Daily" id="Ro6-6M-GGG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="L3g-4i-c6Q"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kf4-YI-CxS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="pVg-Fj-BDk" customClass="APODDailyViewController" customModule="Assessment_6_NASA_APOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O1B-O7-qgx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Q8u-Hc-qOi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todays APOD:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCY-jw-9VT">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(APOD Title)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8h-dC-mrP">
+                                        <rect key="frame" x="0.0" y="31.333333333333329" width="393" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(copyright)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRh-nM-Vdf">
+                                        <rect key="frame" x="0.0" y="55.666666666666679" width="393" height="19.333333333333336"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fue-Hz-Owi">
+                                <rect key="frame" x="16" y="149" width="361" height="337"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(APOD Explanation)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY1-bz-1AJ">
+                                <rect key="frame" x="8" y="494" width="377" height="267"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ehj-lA-f7Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kY1-bz-1AJ" firstAttribute="top" secondItem="Fue-Hz-Owi" secondAttribute="bottom" constant="8" id="3UD-EI-Otl"/>
+                            <constraint firstItem="Q8u-Hc-qOi" firstAttribute="leading" secondItem="ehj-lA-f7Q" secondAttribute="leading" id="9f0-YS-InV"/>
+                            <constraint firstItem="Fue-Hz-Owi" firstAttribute="centerX" secondItem="Q8u-Hc-qOi" secondAttribute="centerX" id="A3R-k7-XHq"/>
+                            <constraint firstItem="Fue-Hz-Owi" firstAttribute="leading" secondItem="O1B-O7-qgx" secondAttribute="leadingMargin" id="FI7-Qv-a0r"/>
+                            <constraint firstItem="ehj-lA-f7Q" firstAttribute="bottom" secondItem="Fue-Hz-Owi" secondAttribute="bottom" constant="283" id="JL5-J9-7K0"/>
+                            <constraint firstItem="ehj-lA-f7Q" firstAttribute="trailing" secondItem="Q8u-Hc-qOi" secondAttribute="trailing" id="Qov-Ho-SVr"/>
+                            <constraint firstItem="kY1-bz-1AJ" firstAttribute="leading" secondItem="ehj-lA-f7Q" secondAttribute="leading" constant="8" id="U2Y-5j-zpH"/>
+                            <constraint firstItem="ehj-lA-f7Q" firstAttribute="bottom" secondItem="kY1-bz-1AJ" secondAttribute="bottom" constant="8" id="Umh-Oe-Cb7"/>
+                            <constraint firstItem="Q8u-Hc-qOi" firstAttribute="top" secondItem="ehj-lA-f7Q" secondAttribute="top" id="fbN-2m-FbC"/>
+                            <constraint firstItem="ehj-lA-f7Q" firstAttribute="trailing" secondItem="kY1-bz-1AJ" secondAttribute="trailing" constant="8" id="ivi-Rk-VwP"/>
+                            <constraint firstItem="Fue-Hz-Owi" firstAttribute="top" secondItem="Q8u-Hc-qOi" secondAttribute="bottom" constant="15" id="yva-xE-Yyi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Todays APOD" image="APOD Icon" id="hPT-2f-f3K"/>
+                    <navigationItem key="navigationItem" id="CeX-xZ-oWL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdY-Ui-cHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1696.9465648854962" y="-31.690140845070424"/>
         </scene>
-        <!--APOD Search-->
-        <scene sceneID="1it-GB-ahY">
+        <!--Searched APOD-->
+        <scene sceneID="Zbh-Up-2uL">
             <objects>
-                <viewControllerPlaceholder storyboardName="APOD Search" id="x53-9d-NxP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jMt-yR-IMl"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XFN-pZ-REh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="haZ-pn-9mP" customClass="APODSearchViewController" customModule="Assessment_6_NASA_APOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lln-3I-0oU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xig-ve-Clj">
+                                <rect key="frame" x="8" y="59.000000000000007" width="377" height="98.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="vSq-gX-iNu">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search an APOD from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHY-aV-Evf">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3KA-5n-xj7">
+                                                <rect key="frame" x="200" y="0.0" width="177" height="50"/>
+                                                <date key="minimumDate" timeIntervalSinceReferenceDate="-175010400">
+                                                    <!--1995-06-16 10:00:00 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(APOD Title)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oE6-Be-7zz">
+                                        <rect key="frame" x="0.0" y="55.000000000000007" width="377" height="19.333333333333336"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(copyright)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-4h-lul">
+                                        <rect key="frame" x="0.0" y="79.333333333333343" width="377" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RTx-08-u4I">
+                                <rect key="frame" x="16" y="172.66666666666666" width="361" height="313.33333333333337"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(APOD Explanation)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJX-uU-raJ">
+                                <rect key="frame" x="8" y="494" width="377" height="267"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aHa-sX-lQ5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aHa-sX-lQ5" firstAttribute="trailing" secondItem="RTx-08-u4I" secondAttribute="trailing" constant="16" id="8OP-eC-SkJ"/>
+                            <constraint firstItem="xig-ve-Clj" firstAttribute="leading" secondItem="aHa-sX-lQ5" secondAttribute="leading" constant="8" id="HkW-Gb-Ydf"/>
+                            <constraint firstItem="eJX-uU-raJ" firstAttribute="top" secondItem="RTx-08-u4I" secondAttribute="bottom" constant="8" id="ICq-cM-etQ"/>
+                            <constraint firstItem="RTx-08-u4I" firstAttribute="leading" secondItem="Lln-3I-0oU" secondAttribute="leadingMargin" id="KpZ-gk-oOi"/>
+                            <constraint firstItem="RTx-08-u4I" firstAttribute="top" secondItem="xig-ve-Clj" secondAttribute="bottom" constant="15" id="NU1-5Q-d1o"/>
+                            <constraint firstItem="eJX-uU-raJ" firstAttribute="leading" secondItem="aHa-sX-lQ5" secondAttribute="leading" constant="8" id="Nk6-Mc-N5J"/>
+                            <constraint firstItem="xig-ve-Clj" firstAttribute="top" secondItem="aHa-sX-lQ5" secondAttribute="top" id="aCK-aX-xif"/>
+                            <constraint firstItem="aHa-sX-lQ5" firstAttribute="bottom" secondItem="eJX-uU-raJ" secondAttribute="bottom" constant="8" id="bQV-7v-aNE"/>
+                            <constraint firstItem="RTx-08-u4I" firstAttribute="centerX" secondItem="xig-ve-Clj" secondAttribute="centerX" id="eTs-b2-gJI"/>
+                            <constraint firstItem="aHa-sX-lQ5" firstAttribute="trailing" secondItem="xig-ve-Clj" secondAttribute="trailing" constant="8" id="hmP-fv-lcd"/>
+                            <constraint firstItem="aHa-sX-lQ5" firstAttribute="bottom" secondItem="RTx-08-u4I" secondAttribute="bottom" constant="283" id="hwa-ib-T5t"/>
+                            <constraint firstItem="aHa-sX-lQ5" firstAttribute="trailing" secondItem="eJX-uU-raJ" secondAttribute="trailing" constant="8" id="qxE-cf-xHX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Searched APOD" image="APOD Many Icon" id="0N8-GH-VKR"/>
+                    <navigationItem key="navigationItem" id="tY0-Tw-ny7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FeU-5Z-krj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2843.5114503816794" y="-32.394366197183103"/>
+            <point key="canvasLocation" x="2854" y="-32"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="APOD Icon" width="25" height="25"/>
+        <image name="APOD Many Icon" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

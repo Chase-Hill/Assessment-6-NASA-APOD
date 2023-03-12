@@ -12,18 +12,16 @@
 		AF9823B529BD265100F75DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9823B329BD265100F75DEE /* Main.storyboard */; };
 		AF9823B729BD265200F75DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9823B629BD265200F75DEE /* Assets.xcassets */; };
 		AF9823BA29BD265200F75DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9823B829BD265200F75DEE /* LaunchScreen.storyboard */; };
-		AF9823C429BD2A4900F75DEE /* APODSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823C329BD2A4900F75DEE /* APODSearchTableViewController.swift */; };
 		AF9823C729BD2BA200F75DEE /* APODDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823C629BD2BA200F75DEE /* APODDailyViewController.swift */; };
-		AF9823C929BD2BB600F75DEE /* APODSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823C829BD2BB600F75DEE /* APODSearchTableViewCell.swift */; };
 		AF9823CB29BD31A800F75DEE /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823CA29BD31A800F75DEE /* APOD.swift */; };
-		AF9823D329BD381C00F75DEE /* APOD Daily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9823D129BD381C00F75DEE /* APOD Daily.storyboard */; };
-		AF9823D529BD382E00F75DEE /* APOD Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9823D429BD382E00F75DEE /* APOD Search.storyboard */; };
 		AF9823D729BD398B00F75DEE /* Network Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823D629BD398B00F75DEE /* Network Errors.swift */; };
 		AF9823DB29BD39AE00F75DEE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823DA29BD39AE00F75DEE /* EndPoint.swift */; };
 		AF9823DE29BD3D3900F75DEE /* APODDailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823DD29BD3D3900F75DEE /* APODDailyViewModel.swift */; };
 		AF9823E029BD3E0D00F75DEE /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823DF29BD3E0D00F75DEE /* NetworkingController.swift */; };
 		AF9823E229BD3E5100F75DEE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E129BD3E5100F75DEE /* APIService.swift */; };
 		AF9823E529BD432B00F75DEE /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E429BD432B00F75DEE /* DateExtension.swift */; };
+		AF9823E729BD5EAA00F75DEE /* APODSearchedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */; };
+		AF9823EC29BD632E00F75DEE /* APODSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,18 +32,16 @@
 		AF9823B629BD265200F75DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF9823B929BD265200F75DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF9823BB29BD265200F75DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF9823C329BD2A4900F75DEE /* APODSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchTableViewController.swift; sourceTree = "<group>"; };
 		AF9823C629BD2BA200F75DEE /* APODDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDailyViewController.swift; sourceTree = "<group>"; };
-		AF9823C829BD2BB600F75DEE /* APODSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchTableViewCell.swift; sourceTree = "<group>"; };
 		AF9823CA29BD31A800F75DEE /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
-		AF9823D229BD381C00F75DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Assessment-6-NASA-APOD/Storyboard/Base.lproj/APOD Daily.storyboard"; sourceTree = "<group>"; };
-		AF9823D429BD382E00F75DEE /* APOD Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "APOD Search.storyboard"; sourceTree = "<group>"; };
 		AF9823D629BD398B00F75DEE /* Network Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Errors.swift"; sourceTree = "<group>"; };
 		AF9823DA29BD39AE00F75DEE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		AF9823DD29BD3D3900F75DEE /* APODDailyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDailyViewModel.swift; sourceTree = "<group>"; };
 		AF9823DF29BD3E0D00F75DEE /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		AF9823E129BD3E5100F75DEE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		AF9823E429BD432B00F75DEE /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchedViewModel.swift; sourceTree = "<group>"; };
+		AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +86,10 @@
 		AF9823C129BD277400F75DEE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF9823BB29BD265200F75DEE /* Info.plist */,
+				AF9823B629BD265200F75DEE /* Assets.xcassets */,
 				AF9823AD29BD265100F75DEE /* AppDelegate.swift */,
 				AF9823AF29BD265100F75DEE /* SceneDelegate.swift */,
-				AF9823B629BD265200F75DEE /* Assets.xcassets */,
-				AF9823BB29BD265200F75DEE /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,9 +123,8 @@
 		AF9823CF29BD37EC00F75DEE /* APOD Daily */ = {
 			isa = PBXGroup;
 			children = (
-				AF9823D129BD381C00F75DEE /* APOD Daily.storyboard */,
-				AF9823C629BD2BA200F75DEE /* APODDailyViewController.swift */,
 				AF9823DD29BD3D3900F75DEE /* APODDailyViewModel.swift */,
+				AF9823C629BD2BA200F75DEE /* APODDailyViewController.swift */,
 			);
 			path = "APOD Daily";
 			sourceTree = "<group>";
@@ -137,9 +132,8 @@
 		AF9823D029BD37FB00F75DEE /* APOD Search */ = {
 			isa = PBXGroup;
 			children = (
-				AF9823D429BD382E00F75DEE /* APOD Search.storyboard */,
-				AF9823C329BD2A4900F75DEE /* APODSearchTableViewController.swift */,
-				AF9823C829BD2BB600F75DEE /* APODSearchTableViewCell.swift */,
+				AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */,
+				AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */,
 			);
 			path = "APOD Search";
 			sourceTree = "<group>";
@@ -156,8 +150,8 @@
 		AF9823D929BD399E00F75DEE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				AF9823DF29BD3E0D00F75DEE /* NetworkingController.swift */,
 				AF9823D629BD398B00F75DEE /* Network Errors.swift */,
+				AF9823DF29BD3E0D00F75DEE /* NetworkingController.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -231,10 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9823BA29BD265200F75DEE /* LaunchScreen.storyboard in Resources */,
-				AF9823D529BD382E00F75DEE /* APOD Search.storyboard in Resources */,
 				AF9823B729BD265200F75DEE /* Assets.xcassets in Resources */,
 				AF9823B529BD265100F75DEE /* Main.storyboard in Resources */,
-				AF9823D329BD381C00F75DEE /* APOD Daily.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF9823C429BD2A4900F75DEE /* APODSearchTableViewController.swift in Sources */,
 				AF9823E529BD432B00F75DEE /* DateExtension.swift in Sources */,
 				AF9823CB29BD31A800F75DEE /* APOD.swift in Sources */,
 				AF9823AE29BD265100F75DEE /* AppDelegate.swift in Sources */,
@@ -253,9 +244,10 @@
 				AF9823D729BD398B00F75DEE /* Network Errors.swift in Sources */,
 				AF9823DE29BD3D3900F75DEE /* APODDailyViewModel.swift in Sources */,
 				AF9823C729BD2BA200F75DEE /* APODDailyViewController.swift in Sources */,
-				AF9823C929BD2BB600F75DEE /* APODSearchTableViewCell.swift in Sources */,
+				AF9823E729BD5EAA00F75DEE /* APODSearchedViewModel.swift in Sources */,
 				AF9823B029BD265100F75DEE /* SceneDelegate.swift in Sources */,
 				AF9823DB29BD39AE00F75DEE /* EndPoint.swift in Sources */,
+				AF9823EC29BD632E00F75DEE /* APODSearchViewController.swift in Sources */,
 				AF9823E029BD3E0D00F75DEE /* NetworkingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,14 +269,6 @@
 				AF9823B929BD265200F75DEE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		AF9823D129BD381C00F75DEE /* APOD Daily.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF9823D229BD381C00F75DEE /* Base */,
-			);
-			name = "APOD Daily.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -407,12 +391,12 @@
 		AF9823BF29BD265200F75DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = APODAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Assessment-6-NASA-APOD/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Assessment-6-NASA-APOD/Supporting Files/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -434,12 +418,12 @@
 		AF9823C029BD265200F75DEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = APODAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Assessment-6-NASA-APOD/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Assessment-6-NASA-APOD/Supporting Files/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
