@@ -13,10 +13,11 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="A3y-Fl-V0p" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sTS-Ez-np3">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="sTS-Ez-np3">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="pVg-Fj-BDk" kind="relationship" relationship="viewControllers" id="MbJ-R3-rZF"/>
@@ -32,7 +33,7 @@
             <objects>
                 <viewController id="pVg-Fj-BDk" customClass="APODDailyViewController" customModule="Assessment_6_NASA_APOD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O1B-O7-qgx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Q8u-Hc-qOi">
@@ -86,6 +87,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Todays APOD" image="APOD Icon" id="hPT-2f-f3K"/>
                     <navigationItem key="navigationItem" id="CeX-xZ-oWL"/>
+                    <connections>
+                        <outlet property="apodCopyrightLabel" destination="BRh-nM-Vdf" id="uam-Zw-76M"/>
+                        <outlet property="apodExplanationLabel" destination="kY1-bz-1AJ" id="Em8-Lw-fvv"/>
+                        <outlet property="apodTitleLabel" destination="S8h-dC-mrP" id="jS7-FV-9HR"/>
+                        <outlet property="todayAPODImageView" destination="Fue-Hz-Owi" id="gcF-BM-JkY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdY-Ui-cHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +103,7 @@
             <objects>
                 <viewController id="haZ-pn-9mP" customClass="APODSearchViewController" customModule="Assessment_6_NASA_APOD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lln-3I-0oU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xig-ve-Clj">
@@ -162,6 +169,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Searched APOD" image="APOD Many Icon" id="0N8-GH-VKR"/>
                     <navigationItem key="navigationItem" id="tY0-Tw-ny7"/>
+                    <connections>
+                        <outlet property="apodCopyrightLabel" destination="xXZ-4h-lul" id="XFb-oz-bQc"/>
+                        <outlet property="apodDatePicker" destination="3KA-5n-xj7" id="Y4n-5h-ooa"/>
+                        <outlet property="apodExplanationLabel" destination="eJX-uU-raJ" id="FqR-cM-9gd"/>
+                        <outlet property="apodTitleLabel" destination="oE6-Be-7zz" id="q7Y-PV-JnD"/>
+                        <outlet property="searchedAPODImageView" destination="RTx-08-u4I" id="Q9F-7f-9Lh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FeU-5Z-krj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
