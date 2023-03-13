@@ -27,7 +27,7 @@ class APODDailyViewController: UIViewController {
     }
 }
 
-// MARK: - Extensions
+// MARK: - Extension
 extension APODDailyViewController: APODDailyViewModelDelegate {
     func updateViews() {
         DispatchQueue.main.async {
@@ -35,7 +35,6 @@ extension APODDailyViewController: APODDailyViewModelDelegate {
             self.apodTitleLabel.text = dailyAPOD.title
             self.apodCopyrightLabel.text = "Credit: \(dailyAPOD.copyright ?? "NASA")"
             self.apodExplanationLabel.text = dailyAPOD.explanation
-            
             guard let url = URL(string: self.viewModel.apod!.imageURL) else { return }
             let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
             guard let finalImageURL = urlComponents?.url else { return }

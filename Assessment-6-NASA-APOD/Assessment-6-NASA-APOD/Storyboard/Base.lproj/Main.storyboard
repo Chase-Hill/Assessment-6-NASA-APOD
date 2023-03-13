@@ -143,24 +143,24 @@
             </objects>
             <point key="canvasLocation" x="924" y="-32"/>
         </scene>
-        <!--View Controller-->
+        <!--Searched Explanation View Controller-->
         <scene sceneID="fi4-du-XES">
             <objects>
-                <viewController id="4of-lm-E0j" sceneMemberID="viewController">
+                <viewController id="4of-lm-E0j" customClass="SearchedExplanationViewController" customModule="Assessment_6_NASA_APOD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wGo-ht-y3H">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="(Explanation)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qzc-2g-S3q">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="(Searched Explanation)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qzc-2g-S3q">
                                 <rect key="frame" x="0.0" y="59" width="393" height="724"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cKm-Q6-IKT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qzc-2g-S3q" firstAttribute="leading" secondItem="cKm-Q6-IKT" secondAttribute="leading" id="0dU-Ox-I6H"/>
                             <constraint firstItem="qzc-2g-S3q" firstAttribute="top" secondItem="cKm-Q6-IKT" secondAttribute="top" id="BRy-0i-Rj0"/>
@@ -168,6 +168,9 @@
                             <constraint firstItem="cKm-Q6-IKT" firstAttribute="trailing" secondItem="qzc-2g-S3q" secondAttribute="trailing" id="cBh-vU-hBp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchedExplanationTextView" destination="qzc-2g-S3q" id="t0e-oj-7tu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLu-JY-zOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,7 +223,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RTx-08-u4I" customClass="ServiceRequestingImageView" customModule="Assessment_6_NASA_APOD" customModuleProvider="target">
                                 <rect key="frame" x="16" y="172.66666666666666" width="361" height="313.33333333333337"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(APOD Explanation)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJX-uU-raJ">
+                            <label opaque="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(APOD Explanation)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJX-uU-raJ">
                                 <rect key="frame" x="8" y="494" width="377" height="267"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -273,9 +276,6 @@
     <resources>
         <image name="APOD Icon" width="25" height="25"/>
         <image name="APOD Many Icon" width="25" height="25"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

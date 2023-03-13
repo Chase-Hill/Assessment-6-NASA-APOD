@@ -37,11 +37,8 @@ extension APODSearchViewController: APODSearchedViewModelDelegate {
             self.apodCopyrightLabel.text = apod.copyright
             self.apodExplanationLabel.text = apod.explanation
             
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd"
-            let endString = formatter.date(from: apod.date)
             guard let url = URL(string: self.viewModel.apod!.imageURL) else { return }
-            let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
+            var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
             guard let finalImageURL = urlComponents?.url else { return }
             self.searchedAPODImageView.fetchImage(using: finalImageURL)
         }
