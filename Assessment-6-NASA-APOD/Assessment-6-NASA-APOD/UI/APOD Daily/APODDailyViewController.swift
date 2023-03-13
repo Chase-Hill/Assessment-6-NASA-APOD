@@ -31,7 +31,6 @@ class APODDailyViewController: UIViewController {
 extension APODDailyViewController: APODDailyViewModelDelegate {
     func updateViews() {
         DispatchQueue.main.async {
-            
             guard let dailyAPOD = self.viewModel.apod else { return }
             self.apodTitleLabel.text = dailyAPOD.title
             self.apodCopyrightLabel.text = "Credit: \(dailyAPOD.copyright ?? "NASA")"

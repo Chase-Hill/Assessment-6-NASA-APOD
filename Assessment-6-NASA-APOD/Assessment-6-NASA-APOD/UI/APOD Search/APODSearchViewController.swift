@@ -16,13 +16,37 @@ class APODSearchViewController: UIViewController {
     @IBOutlet weak var searchedAPODImageView: ServiceRequestingImageView!
     @IBOutlet weak var apodExplanationLabel: UILabel!
     
+    // MARK: - Properties
+    var viewModel: APODSearchedViewModel!
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
+        viewModel = APODSearchedViewModel(delegate: self)
+        updateViews()
+    }
+}
+
+// MARK: - Extension
+extension APODSearchViewController: APODSearchedViewModelDelegate {
+    func updateViews() {
+        DispatchQueue.main.async {
+            guard let apod = self.viewModel.apod else { return }
+            self.apodTitleLabel.text = apod.title
+            self.apodCopyrightLabel.text = apod.copyright
+            self.apodExplanationLabel.text = apod.explanation
+            
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            let endString = formatter.date(from: apod.date)
+            guard let url = URL(string: self.viewModel.apod!.imageURL) else { return }
+            let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
+            guard let finalImageURL = urlComponents?.url else { return }
+            self.searchedAPODImageView.fetchImage(using: finalImageURL)
+        }
     }
     
-    // MARK: - Functions
     func assignbackground() {
         let background = UIImage(named: "APOD search background")
         

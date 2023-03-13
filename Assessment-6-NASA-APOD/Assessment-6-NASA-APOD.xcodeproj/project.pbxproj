@@ -24,6 +24,7 @@
 		AF9823EC29BD632E00F75DEE /* APODSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */; };
 		AF9823F029BD8BF700F75DEE /* ServiceRequestingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823EF29BD8BF700F75DEE /* ServiceRequestingImageView.swift */; };
 		AF9823F229BE4EC200F75DEE /* DailyExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823F129BE4EC200F75DEE /* DailyExplanationViewController.swift */; };
+		AF9823F429BEAC5900F75DEE /* SearchedTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9823F329BEAC5900F75DEE /* SearchedTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchViewController.swift; sourceTree = "<group>"; };
 		AF9823EF29BD8BF700F75DEE /* ServiceRequestingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestingImageView.swift; sourceTree = "<group>"; };
 		AF9823F129BE4EC200F75DEE /* DailyExplanationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExplanationViewController.swift; sourceTree = "<group>"; };
+		AF9823F329BEAC5900F75DEE /* SearchedTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				AF9823E629BD5EAA00F75DEE /* APODSearchedViewModel.swift */,
 				AF9823EB29BD632E00F75DEE /* APODSearchViewController.swift */,
+				AF9823F329BEAC5900F75DEE /* SearchedTextViewController.swift */,
 			);
 			path = "APOD Search";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9823F429BEAC5900F75DEE /* SearchedTextViewController.swift in Sources */,
 				AF9823F029BD8BF700F75DEE /* ServiceRequestingImageView.swift in Sources */,
 				AF9823E529BD432B00F75DEE /* DateExtension.swift in Sources */,
 				AF9823CB29BD31A800F75DEE /* APOD.swift in Sources */,
